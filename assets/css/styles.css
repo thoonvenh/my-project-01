@@ -62,6 +62,11 @@ a {
     font-size: 4.2rem;
     line-height: 1.33;
 }
+
+.heading.lv3 {
+    font-size: 2.2rem;
+}
+
 .desc {
     color: #9da6a5;
     font-size: 1.8rem;
@@ -317,4 +322,163 @@ a {
 
 .hero-summary-03 img:last-child {
     width: 26px;
+}
+
+/* Features */
+
+.features .body {
+    margin-top: 130px;
+    width: 875px;
+    height: 559px;
+}
+
+.features .content {
+    width: 591px;
+}
+
+.features .content .title {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.features .content .heading {
+    margin: 18px 0 18px;
+}
+
+.features-list .item {
+    margin-top: 80px;
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-list .item {
+    width: 224px;
+}
+
+.features-list .item .sub-title {
+    margin-top: 26px;
+    color: #0d1111;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.features-list .item .desc {
+    margin-top: 16px;
+    color: #9da6a5;
+    font-size: 1.6rem;
+    line-height: 1.69;
+}
+
+/* Popular */
+
+.popular .body {
+    margin-top: 130px;
+}
+
+.popular-top .sub-title {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.popular-top .heading.lv2 {
+    margin: 18px 0 19px;
+}
+
+.popular-top .row {
+    display: flex;
+    align-items: center;
+}
+
+.popular-top .row .desc {
+    width: 525px;
+}
+
+.popular-top .row .link {
+    margin-left: auto;
+    color: #1ebfc1;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.popular-list {
+    margin-top: 79px;
+    display: flex;
+    gap: 47px;
+}
+
+.popular-list .item {
+    position: relative;
+    width: 30%;
+    min-width: 359px;
+    height: 517px;
+    border-radius: 8px;
+}
+
+.popular-list .item .image {
+    position: absolute;
+    width: 100%;
+    height: 393px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.popular-list .content {
+    padding: 18px 25px 29px;
+    position: absolute;
+    width: 325px;
+    height: 195px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+    bottom: 0;
+    left: 17px;
+}
+
+.popular-list .popular-desc {
+    color: #9da6a5;
+    font-size: 1.4rem;
+}
+
+.popular-list .popular-desc.free {
+    margin: 16px 0 6px;
+    font-size: 1.6rem;
+    line-height: normal;
+    color: #767e7e;
+}
+
+.popular-list .popular-desc strong {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.popular-list .classes {
+    display: flex;
+    gap: 20px;
+    margin-top: 18px;
+}
+
+.popular-list .classes .popular-desc.dots {
+    position: relative;
+}
+
+.popular-list .classes .popular-desc.dots:first-child {
+    margin-left: 12px;
+}
+
+.popular-list .classes .popular-desc.dots::before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #1ebfc1;
+    border-radius: 50%;
+    left: -12px;
+    bottom: 5px;
 }
