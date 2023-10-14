@@ -6,16 +6,18 @@
         <title>My-project-01</title>
         <!-- reset -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
+
+        <!-- styles -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+
         <!-- Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
             rel="stylesheet" />
-
-        <!-- styles -->
-        <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
+
     <body style="height: 5000px">
         <!-- Header -->
         <header class="header fixed">
@@ -29,7 +31,7 @@
                     <!-- Nav -->
                     <nav class="nav">
                         <ul>
-                            <li><a href="#!">Home</a></li>
+                            <li><a class="active" href="#!">Home</a></li>
                             <li><a href="#!">Features</a></li>
                             <li><a href="#!">Pricing</a></li>
                             <li><a href="#!">About</a></li>
@@ -37,7 +39,7 @@
                         </ul>
                     </nav>
                     <div class="action">
-                        <a href="#!">Sign in</a>
+                        <div class="btn-link"><a href="#!">Sign in</a></div>
                         <div class="btn-link"><a href="#!">Sign up</a></div>
                     </div>
                 </div>
@@ -50,11 +52,13 @@
                     <div class="body">
                         <!-- Hero left -->
                         <div class="content-block">
-                            <p class="desc hero-desc">
+                            <p class="desc hero-desc line-clamp">
                                 😎 EASY LEAENING PLATFORM
                             </p>
-                            <h1 class="heading">Words learner come here.</h1>
-                            <p class="desc">
+                            <h1 class="heading line-clamp line2">
+                                Words learner come here.
+                            </h1>
+                            <p class="desc line-clamp line3">
                                 Build skills with courses, certificates, and get
                                 online knowledge from our world-class platform.
                             </p>
@@ -141,10 +145,10 @@
                     <div class="body">
                         <div class="content">
                             <p class="title">F E A T U R E S</p>
-                            <h2 class="heading lv2">
+                            <h2 class="heading lv2 line-clamp line2">
                                 We are providing suitable features for students.
                             </h2>
-                            <p class="desc">
+                            <p class="desc line-clamp line2">
                                 Read our awesome feature that is absolutely suit
                                 for you. Explore the feature and know the best.
                             </p>
@@ -156,8 +160,8 @@
                                     src="./assets/icon/live-class-icon.svg"
                                     alt=""
                                     class="icon" />
-                                <p class="sub-title">Live Class</p>
-                                <p class="desc">
+                                <p class="sub-title line-clamp">Live Class</p>
+                                <p class="desc line-clamp line3">
                                     We are providing live classes with the best
                                     teacher for you
                                 </p>
@@ -167,8 +171,8 @@
                                     src="./assets/icon/discuss-icon.svg"
                                     alt=""
                                     class="icon" />
-                                <p class="sub-title">Discuss</p>
-                                <p class="desc">
+                                <p class="sub-title line-clamp">Discuss</p>
+                                <p class="desc line-clamp line3">
                                     Conversation with teachers or another
                                     students about task or any other thing
                                 </p>
@@ -178,8 +182,8 @@
                                     src="./assets/icon/task-icon.svg"
                                     alt=""
                                     class="icon" />
-                                <p class="sub-title">Task</p>
-                                <p class="desc">
+                                <p class="sub-title line-clamp">Task</p>
+                                <p class="desc line-clamp line3">
                                     We give every of our students task for
                                     gathering knowledge at home
                                 </p>
@@ -188,15 +192,17 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Popular -->
             <div class="popular">
                 <div class="main-content">
                     <div class="body">
                         <div class="popular-top">
                             <p class="sub-title">C O U R S E S</p>
-                            <h2 class="heading lv2">Popular Courses</h2>
+                            <h2 class="heading lv2 line-clamp">
+                                Popular Courses
+                            </h2>
                             <div class="row">
-                                <p class="desc">
+                                <p class="desc line-clamp line2">
                                     Check out our most poular courses that suit
                                     for you. Here you can find your favourite
                                     one.
@@ -207,16 +213,22 @@
 
                         <div class="popular-list">
                             <div class="item">
-                                <img
-                                    src="./assets/img/web-design-img.png"
-                                    alt="Web Design"
-                                    class="image" />
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/web-design-img.png"
+                                        alt="Web Design"
+                                        class="image" />
+                                </a>
                                 <div class="content">
-                                    <h3 class="heading lv3">Web Design</h3>
+                                    <a href="#!"
+                                        ><h3 class="heading lv3 line-clamp">
+                                            Web Design
+                                        </h3></a
+                                    >
                                     <p class="popular-desc free">
                                         Fee <strong>$200</strong>
                                     </p>
-                                    <p class="popular-desc">
+                                    <p class="popular-desc line-clamp">
                                         Web design basic to higer level
                                     </p>
                                     <div class="classes">
@@ -230,16 +242,22 @@
                                 </div>
                             </div>
                             <div class="item">
-                                <img
-                                    src="./assets/img/web-deve-img.png"
-                                    alt="Web Development"
-                                    class="image" />
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/web-deve-img.png"
+                                        alt="Web Development"
+                                        class="image" />
+                                </a>
                                 <div class="content">
-                                    <h3 class="heading lv3">Web Development</h3>
+                                    <a href="#!"
+                                        ><h3 class="heading lv3 line-clamp">
+                                            Web Development
+                                        </h3></a
+                                    >
                                     <p class="popular-desc free">
                                         Fee <strong>$250</strong>
                                     </p>
-                                    <p class="popular-desc">
+                                    <p class="popular-desc line-clamp">
                                         Web design basic to higer level
                                     </p>
                                     <div class="classes">
@@ -253,16 +271,22 @@
                                 </div>
                             </div>
                             <div class="item">
-                                <img
-                                    src="./assets/img/ui-ux-img.png"
-                                    alt="UI/UX Design"
-                                    class="image" />
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/ui-ux-img.png"
+                                        alt="UI/UX Design"
+                                        class="image" />
+                                </a>
                                 <div class="content">
-                                    <h3 class="heading lv3">UI/UX Design</h3>
+                                    <a href="#!"
+                                        ><h3 class="heading lv3 line-clamp">
+                                            UI/UX Design
+                                        </h3></a
+                                    >
                                     <p class="popular-desc free">
                                         Fee <strong>$350</strong>
                                     </p>
-                                    <p class="popular-desc">
+                                    <p class="popular-desc line-clamp">
                                         Web design basic to higer level
                                     </p>
                                     <div class="classes">

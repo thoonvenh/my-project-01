@@ -68,10 +68,30 @@ a {
 }
 
 .desc {
+    font-family: "Poppins", sans-serif;
     color: #9da6a5;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.78;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line2 {
+    --line-clamp: 2;
+}
+
+.line-clamp.line3 {
+    --line-clamp: 3;
+}
+
+.line-clamp.line4 {
+    --line-clamp: 4;
 }
 
 /* Header */
@@ -106,9 +126,13 @@ a {
     color: #171100;
 }
 
+.header .nav .active {
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+}
+
 .header .action {
     display: flex;
-    gap: 24px;
     align-items: center;
     margin-left: auto;
 }
@@ -116,18 +140,26 @@ a {
 .header .action .btn-link {
     max-width: 108px;
     border-radius: 6px;
+    border: 1px solid transparent;
+}
+
+.header .action .btn-link:hover {
+    opacity: 0.5;
     border: 1px solid var(--primary-color);
 }
 
 .header .action .btn-link a {
     display: inline-block;
-    color: var(--primary-color);
     padding: 0 24px;
     text-align: center;
     font-size: 1.6rem;
-    font-weight: 600;
     line-height: 48px;
     white-space: nowrap;
+}
+
+.header .action .btn-link a:hover {
+    color: var(--primary-color);
+    text-shadow: 1px 0 0 currentColor;
 }
 
 /* Hero */
@@ -176,6 +208,10 @@ a {
     border: none;
     background: transparent;
     cursor: pointer;
+}
+
+.hero .cta-group .icon:hover {
+    opacity: 0.8;
 }
 
 .hero .cta-group .icon img {
@@ -428,11 +464,14 @@ a {
     border-radius: 8px;
 }
 
+.popular-list .item .image:hover {
+    opacity: 0.35;
+}
+
 .popular-list .content {
     padding: 18px 25px 29px;
     position: absolute;
     width: 325px;
-    height: 195px;
     border-radius: 8px;
     background: #fff;
     box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
